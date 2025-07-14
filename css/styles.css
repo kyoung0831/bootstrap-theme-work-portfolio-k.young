@@ -114,7 +114,6 @@ h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
 /* Skills Section */
-
 .skills-section {
   text-align: center;
 }
@@ -133,15 +132,45 @@ h1, .h1 {
   box-shadow: 0 4px 10px rgba(136, 14, 79, 0.15);
   transition: transform 0.3s ease;
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
-
+@media (max-width: 576px) {
+  .skill-card {
+    max-width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .skill-card {
+    max-width: 80%;
+  }
+}
+@media (max-width: 390px) {
+  .skill-card {
+    max-width: 78%;
+  }
+}
+@media (max-width: 360px) {
+  .skill-card {
+    max-width: 70%;
+  }
+}
+@media (max-width: 320px) {
+  .skill-card {
+    max-width: 60%;
+  }
+  .portfolio-modal-title {
+    font-size: 1rem !important;
+    font-weight: 600;
+  }
+}
 .skill-icon {
   font-size: 8rem;
   margin-bottom: 10px;
   color: rgb(32, 32, 32);
 }
-
+.mb-4 {
+  text-align: justify;
+}
 .skill-name {
   font-size: 1.1rem;
   font-weight: 600;
